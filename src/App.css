@@ -5,7 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,17 +18,17 @@ html, body {
 }
 
 .shadow-explore {
-  box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
 }
 
 @media (min-width: 768px) {
   .shadow-explore {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 90px rgba(255, 255, 255, 0.1);
   }
 }
 
 @media (min-width: 1024px) {
   .shadow-explore {
-    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 120px rgba(255, 255, 255, 0.1);
   }
 }

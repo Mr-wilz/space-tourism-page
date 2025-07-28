@@ -5,8 +5,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 left-0 pt-6 md:pt-8 lg:pt-10 px-6 md:px-10 lg:px-12 z-50">
-      <div className="flex items-center justify-between max-w-[1440px] mx-auto">
+    <header className="fixed w-full top-0 left-0 pt-6 md:pt-8 lg:pt-10 px-6 md:px-10 lg:px-12 z-50 ">
+      <div className="flex items-center justify-between max-w-[1440px] mx-auto mb-0 lg:mb-0">
         {/* Logo */}
         <div className="w-10 h-10 md:w-12 md:h-12">
           <img src="/logo.svg" alt="Logo" />

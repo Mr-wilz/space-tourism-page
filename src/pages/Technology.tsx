@@ -19,7 +19,7 @@ export default function Technology() {
   return (
     <div className="min-h-screen bg-[url('/Images/technology/background-technology-mobile.jpg')] md:bg-[url('/Images/technology/background-technology-tablet.jpg')] lg:bg-[url('/Images/technology/background-technology-desktop.jpg')] bg-cover bg-no-repeat text-white pt-28 md:pt-40">
       <main className="container mx-auto px-6 lg:px-20">
-        <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-2xl tracking-widest text-center lg:text-left mb-8 md:mb-16 lg:mb-24">
+        <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-2xl tracking-widest text-center lg:text-left mb-6 md:mb-6 lg:mb-10 mt-0">
           <span className="text-white/25 mr-4">03</span> SPACE LAUNCH 101
         </h1>
 

@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-2xl tracking-widest text-primary-light mt-0 mb-4 md:mb-6 md:mt-6">
             SO, YOU WANT TO TRAVEL TO
           </h1>
-          <h2 className="font-bellefair text-5xl md:text-9xl lg:text-[150px] mb-6 md:mb-8">
+          <h2 className="font-bellefair text-3xl md:text-7xl lg:text-[110px] mb-6 md:mb-8">
             SPACE
           </h2>
           <p className="font-barlow text-sm md:text-base lg:text-lg text-primary-light leading-6 md:leading-7 lg:leading-8">
@@ -35,7 +35,7 @@ export default function Home() {
             EXPLORE
           </Link>
           {isHovered && (
-            <div className="absolute inset-0 rounded-full bg-white opacity-10 animate-ping scale-150 z-0"></div>
+            <div className="absolute inset-10 rounded-full bg-white opacity-10 animate-ping scale-200 z-0"></div>
           )}
         </div>
       </main>

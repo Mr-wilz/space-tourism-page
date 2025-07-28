@@ -39,7 +39,7 @@ export default function Crew() {
   };
 
   return (
-    <div className="h-full bg-[url('/Images/crew/background-crew-mobile.jpg')] md:bg-[url('/Images/crew/background-crew-tablet.jpg')] lg:bg-[url('/Images/crew/background-crew-desktop.jpg')] bg-cover bg-no-repeat text-white pt-20 md:pt-40 md:pb-4 pb-4">
+    <div className="min-h-screen bg-[url('/Images/crew/background-crew-mobile.jpg')] md:bg-[url('/Images/crew/background-crew-tablet.jpg')] lg:bg-[url('/Images/crew/background-crew-desktop.jpg')] bg-cover bg-no-repeat text-white pt-20 md:pt-40 md:pb-4 pb-4">
       <main className="container mx-auto px-6 lg:px-20">
         <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-2xl mt-0 text-center lg:text-left mb-8 md:mb-11 lg:mb-1">
           <span className="text-white/25 mr-4">02</span> MEET YOUR CREW
@@ -56,12 +56,12 @@ export default function Crew() {
               }`}
               key={selectedCrewIndex}
             >
-              <picture>
+              <picture className="h-screen">
                 <source srcSet={selectedCrew.images.webp} type="image/webp" />
                 <img
                   src={selectedCrew.images.png}
                   alt={selectedCrew.name}
-                  className="w-42 h-42 md:w-30 md:h-30 lg:w-[44rem] lg:h-[44rem] object-contain"
+                  className="w-42 h-42 md:w-30 md:h-30 lg:w-[42rem] lg:h-[42rem] object-center object-contain"
                 />
               </picture>
             </div>

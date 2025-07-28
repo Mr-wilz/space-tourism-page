@@ -31,6 +31,8 @@ body {
   font-family: "Barlow", sans-serif;
   color: white;
   min-height: 100vh;
+  height: 100vh;
+ 
 }
 @media screen and (min-width: 1465px) {
   html,
