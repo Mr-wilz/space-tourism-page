@@ -32,7 +32,8 @@ body {
   color: white;
   min-height: 100vh;
   height: 100vh;
- 
+  min-width: 100vw;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 1465px) {
   html,
