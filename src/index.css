@@ -34,6 +34,7 @@ body {
   height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
+  /* background: pink; */
 }
 @media screen and (min-width: 1465px) {
   html,
@@ -113,4 +114,20 @@ body {
 button {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.shadow-explore {
+  box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .shadow-explore {
+    box-shadow: 0 0 0 90px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (min-width: 1024px) {
+  .shadow-explore {
+    box-shadow: 0 0 0 120px rgba(255, 255, 255, 0.1);
+  }
 }
