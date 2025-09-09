@@ -39,15 +39,15 @@ export default function Crew() {
   };
 
   return (
-    <div className="min-h-screen bg-[url('/Images/crew/background-crew-mobile.jpg')] md:bg-[url('/Images/crew/background-crew-tablet.jpg')] lg:bg-[url('/Images/crew/background-crew-desktop.jpg')] bg-cover bg-no-repeat text-white pt-20 md:pt-40 md:pb-4 pb-4">
-      <main className="container mx-auto px-6 lg:px-20">
-        <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-2xl mt-0 text-center lg:text-left mb-8 md:mb-11 lg:mb-1">
+    <div className="min-h-screen bg-[url('/Images/crew/background-crew-mobile.jpg')] md:bg-[url('/Images/crew/background-crew-tablet.jpg')] lg:bg-[url('/Images/crew/background-crew-desktop.jpg')] bg-cover bg-no-repeat text-white pt-20 md:pt-40 md:pb-4 lg:pt-[100px] ">
+      <main className=" mx-auto px-6 lg:px-20 items-center lg:min-h-screen lg:fixed lg:min-w-[100vw] ">
+        <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-xl  text-center lg:text-left mb-8 md:mb-11 lg:mb-0 ">
           <span className="text-white/25 mr-4">02</span> MEET YOUR CREW
         </h1>
 
-        <div className="flex flex-col lg:flex-row-reverse items-center justify-between">
+        <div className="flex flex-col lg:flex-row-reverse items-center justify-center lg:h-screen">
           {/* Crew Image with Animation */}
-          <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0 border-b border-white/20 lg:border-none overflow-hidden">
+          <div className="w-full lg:w-1/2 flex justify-center mb-8 border-b border-white/20 lg:border-none overflow-hidden lg:pb-1">
             <div
               className={`transition-transform duration-500 ease-in-out ${
                 transitionDirection === "right"
@@ -56,19 +56,19 @@ export default function Crew() {
               }`}
               key={selectedCrewIndex}
             >
-              <picture className="h-screen">
+              <picture className="crew-pic">
                 <source srcSet={selectedCrew.images.webp} type="image/webp" />
                 <img
                   src={selectedCrew.images.png}
                   alt={selectedCrew.name}
-                  className="w-42 h-42 md:w-30 md:h-30 lg:w-[42rem] lg:h-[42rem] object-center object-contain"
+                  className="w-42 h-42 md:w-30 md:h-30 lg:w-[28rem] object-center object-contain lg:h-screen"
                 />
               </picture>
             </div>
           </div>
 
           {/* Crew Content */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start lg:mt-4">
             {/* Crew Navigation Dots */}
             <div className="flex space-x-4 mb-8 md:mb-16 lg:order-2 lg:mt-16">
               {crewMembers.map((_, index) => (
@@ -92,13 +92,13 @@ export default function Crew() {
                   : "animate-fade-in-left"
               }`}
             >
-              <h2 className="font-bellefair text-2xl md:text-3xl lg:text-4xl text-white/50 uppercase mb-2">
+              <h2 className="font-bellefair text-2xl md:text-3xl lg:text-2xl text-white/50 uppercase mb-2">
                 {selectedCrew.role}
               </h2>
-              <h3 className="font-bellefair text-3xl md:text-4xl lg:text-6xl uppercase mb-4">
+              <h3 className="font-bellefair text-3xl md:text-4xl lg:text-2xl uppercase mb-2">
                 {selectedCrew.name}
               </h3>
-              <p className="font-barlow text-base md:text-lg lg:text-xl text-primary-light leading-6 md:leading-7 lg:leading-8 max-w-md">
+              <p className="font-barlow text-base md:text-lg lg:text-[16px] text-primary-light leading-6 md:leading-7 lg:leading-8 max-w-md">
                 {selectedCrew.bio}
               </p>
             </div>

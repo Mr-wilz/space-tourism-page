@@ -30,9 +30,9 @@ export default function Destination() {
   }, [rotation]);
 
   return (
-    <div className="min-h-screen bg-[url('/Images/destination/background-destination-mobile.jpg')] md:bg-[url('/Images/destination/background-destination-tablet.jpg')] lg:bg-[url('/Images/destination/background-destination-desktop.jpg')] bg-cover bg-no-repeat text-white pt-28 md:pt-40">
-      <main className="container mx-auto px-6 lg:px-20">
-        <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-2xl tracking-widest text-center lg:text-left mb-8 md:mb-16 lg:mb-24">
+    <div className="min-h-screen bg-[url('/Images/destination/background-destination-mobile.jpg')] md:bg-[url('/Images/destination/background-destination-tablet.jpg')] lg:bg-[url('/Images/destination/background-destination-desktop.jpg')] bg-cover bg-no-repeat text-white pt-28 md:pt-40 lg:pt-[150px]">
+      <main className="container mx-auto px-6 lg:px-20 ">
+        <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-xl tracking-widest text-center lg:text-left mb-8 md:mb-16 lg:mb-0">
           <span className="text-white/25 mr-4">01</span> PICK YOUR DESTINATION
         </h1>
 
@@ -46,7 +46,7 @@ export default function Destination() {
               <img
                 src={selectedDestination.images.png}
                 alt={selectedDestination.name}
-                className="w-44 h-44 md:w-60 md:h-60 lg:w-80 lg:h-80"
+                className="w-44 h-44 md:w-60 md:h-60 lg:w-60 lg:h-60"
                 style={{
                   transform: `rotate(${rotation}deg)`,
                   transition: "transform 0.1s ease-in-out",
@@ -72,11 +72,11 @@ export default function Destination() {
               ))}
             </div>
 
-            <h2 className="font-bellefair text-6xl md:text-7xl lg:text-8xl uppercase mb-4">
+            <h2 className="font-bellefair text-6xl md:text-7xl lg:text-5xl uppercase mb-4">
               {selectedDestination.name}
             </h2>
 
-            <p className="font-barlow text-sm md:text-base lg:text-lg text-primary-light leading-6 md:leading-7 lg:leading-8 mb-8 md:mb-12">
+            <p className="font-barlow text-sm md:text-base lg:text-[16px] text-primary-light leading-6 md:leading-7 lg:leading-8 mb-8 md:mb-12">
               {selectedDestination.description}
             </p>
 

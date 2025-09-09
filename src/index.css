@@ -36,11 +36,9 @@ body {
   overflow-x: hidden;
   /* background: pink; */
 }
-@media screen and (min-width: 1465px) {
-  html,
+@media screen (min-width: 800px) {
   body {
-    font-size: 16px;
-    overflow: hidden;
+    overflow: hidden !important;
   }
 }
 
@@ -130,4 +128,6 @@ button {
   .shadow-explore {
     box-shadow: 0 0 0 120px rgba(255, 255, 255, 0.1);
   }
+
+  
 }

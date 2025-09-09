@@ -17,19 +17,19 @@ export default function Technology() {
   const selectedTech = technologies[selectedTechIndex];
 
   return (
-    <div className="min-h-screen bg-[url('/Images/technology/background-technology-mobile.jpg')] md:bg-[url('/Images/technology/background-technology-tablet.jpg')] lg:bg-[url('/Images/technology/background-technology-desktop.jpg')] bg-cover bg-no-repeat text-white pt-28 md:pt-40">
-      <main className="container mx-auto px-6 lg:px-20">
-        <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-2xl tracking-widest text-center lg:text-left mb-6 md:mb-6 lg:mb-10 mt-0">
+    <div className="min-h-screen bg-[url('/Images/technology/background-technology-mobile.jpg')] md:bg-[url('/Images/technology/background-technology-tablet.jpg')] lg:bg-[url('/Images/technology/background-technology-desktop.jpg')] bg-cover bg-no-repeat text-white pt-28 md:pt-30 lg:pt-28">
+      <main className="container mx-auto px-6 lg:px-20  ">
+        <h1 className="font-barlow-condensed text-lg md:text-xl lg:text-xl tracking-widest text-center lg:text-left mb-6 md:mb-6 lg:mb-3">
           <span className="text-white/25 mr-4">03</span> SPACE LAUNCH 101
         </h1>
 
         <div className="flex flex-col lg:flex-row items-center">
           {/* Numbered Navigation - Desktop (vertical) */}
-          <div className="hidden lg:flex flex-col space-y-8 mr-20">
+          <div className="hidden lg:flex flex-col space-y-4 mr-20">
             {technologies.map((_, index) => (
               <button
                 key={index}
-                className={`w-20 h-20 rounded-full border border-white/25 flex items-center justify-center text-3xl font-bellefair transition-all ${
+                className={`w-16 h-16 rounded-full border border-white/25 flex items-center justify-center text-3xl font-bellefair transition-all ${
                   selectedTechIndex === index
                     ? "bg-white text-primary border-white"
                     : "text-white hover:border-white"
@@ -48,15 +48,15 @@ export default function Technology() {
                 THE TERMINOLOGY...
               </span>
             </div>
-            <h2 className="font-bellefair text-3xl md:text-4xl lg:text-6xl uppercase mb-4">
+            <h2 className="font-bellefair text-3xl md:text-4xl lg:text-4xl uppercase mb-4">
               {selectedTech.name}
             </h2>
-            <p className="font-barlow text-base md:text-lg lg:text-xl text-primary-light leading-6 md:leading-7 lg:leading-8 max-w-md mx-auto lg:mx-0 mb-8 md:mb-12">
+            <p className="font-barlow text-base md:text-lg lg:text-[16px] text-primary-light leading-6 md:leading-7 lg:leading-8 max-w-md mx-auto lg:mx-0 mb-8 md:mb-12">
               {selectedTech.description}
             </p>
 
             {/* Numbered Navigation - Mobile/Tablet (horizontal) */}
-            <div className="flex lg:hidden justify-center space-x-4 mb-8 md:mb-12">
+            <div className="flex lg:hidden justify-center space-x-4 mb-8 md:mb-12 ">
               {technologies.map((_, index) => (
                 <button
                   key={index}
@@ -84,7 +84,7 @@ export default function Technology() {
               <img
                 src={selectedTech.images.landscape}
                 alt={selectedTech.name}
-                className="w-full h-auto lg:h-[32rem] lg:w-auto lg:ml-auto object-cover"
+                className="w-full h-auto lg:h-[28rem] lg:w-auto lg:ml-auto object-cover"
               />
             </picture>
           </div>

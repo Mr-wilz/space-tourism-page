@@ -5,15 +5,15 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 left-0 pt-6 md:pt-8 lg:pt-10 px-6 md:px-10 lg:px-12 z-50 ">
+    <header className="fixed w-full top-0 left-0 pt-2 md:pt-8 lg:pt-1 px-4 md:px-8 lg:px-10 z-50 ">
       <div className="flex items-center justify-between max-w-[1440px] mx-auto mb-0 lg:mb-0">
         {/* Logo */}
-        <div className="w-10 h-10 md:w-12 md:h-12">
+        <div className="w-8 h-8 md:w-8 md:h-8">
           <img src="/logo.svg" alt="Logo" />
         </div>
 
         {/* Horizontal line - hidden on mobile */}
-        <div className="hidden lg:block flex-grow max-w-[50rem] h-px bg-white/35 z-10 ml-12"></div>
+        <div className="hidden lg:flex flex-grow max-w-[50rem] h-px bg-white/35 z-100 ml-12"></div>
 
         {/* Navigation */}
         <nav className="relative">
@@ -38,7 +38,7 @@ export default function Navbar() {
           )}
 
           {/* Desktop navigation */}
-          <ul className="hidden md:flex items-center h-24 bg-white/5 backdrop-blur-lg px-12 lg:px-32 gap-x-8 z-0">
+          <ul className="hidden md:flex items-center h-20 bg-white/5 backdrop-blur-lg px-12 lg:px-28 gap-x-8 z-0 text-sm">
             {[
               { to: "/", label: "Home", index: "00" },
               { to: "/destination", label: "Destination", index: "01" },
@@ -49,7 +49,7 @@ export default function Navbar() {
                 <NavLink
                   to={to}
                   className={({ isActive }) =>
-                    `flex items-center h-full font-barlow-condensed text-sm tracking-[2.7px] uppercase border-b-2 ${
+                    `flex items-center h-full font-barlow-condensed text-sm tracking-[2px] uppercase border-b-2 ${
                       isActive
                         ? "border-white text-white"
                         : "border-transparent hover:border-white/50 text-primary-light"
@@ -76,8 +76,8 @@ export default function Navbar() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="21"
+                  width="15"
+                  height="16"
                   viewBox="0 0 20 21"
                 >
                   <g fill="#D0D6F9" fillRule="evenodd">
